@@ -1,0 +1,4 @@
+
+@host =http://localhost
+GET {{host}}/api/readapi.php HTTP/1.1
+content-type: application/json

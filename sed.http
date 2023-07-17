@@ -1,0 +1,47 @@
+# GET http://localhost/api/readapi.php HTTP/1.1
+# content-type: application/json
+
+# POST http://localhost/api/create.php HTTP/1.1
+# content-type: application/json
+
+# {
+#     "name": "rest",
+#     "email": "test@gmail.com",
+#     "address": "REST CLIENT"
+# }
+
+
+# POST http://localhost/api/update.php?id=2&email=mail@gmail.com HTTP/1.1
+# Content-Type: application/json
+
+# {
+#     "users": [
+#         {
+#             "name": "mail",
+#             "address": "mail"
+#         }
+#     ]
+# }
+
+# PATCH http://localhost/api/patch.php?id=14&email=test@gmail.com HTTP/1.1
+# Content-Type: application/json
+
+# {
+#     "users": [
+#         {
+#         "name": "miracle",
+#         "address": "address"
+#         }
+#     ]
+# }
+
+POST http://localhost/api/delete.php HTTP/1.1
+Content-Type: application/json
+
+{
+    "users": [
+        {
+        "user_id": 14
+        }
+    ]
+}
